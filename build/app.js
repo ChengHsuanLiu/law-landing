@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e6bc2725b7bec9d56ccf"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "022476d64f5c52abe9f1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -826,6 +826,15 @@
 	            { className: _app2.default.enterBtn },
 	            '開始使用'
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _app2.default.sop },
+	          _react2.default.createElement('div', { className: _app2.default.step }),
+	          _react2.default.createElement('div', { className: _app2.default.step }),
+	          _react2.default.createElement('div', { className: _app2.default.step }),
+	          _react2.default.createElement('div', { className: _app2.default.step }),
+	          _react2.default.createElement('div', { className: _app2.default.step })
 	        )
 	      );
 	    }

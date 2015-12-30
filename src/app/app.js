@@ -21,6 +21,13 @@ class App extends React.Component {
             開始使用
           </a>
         </div>
+        <div className={style.sop}>
+          <div className={style.step}></div>
+          <div className={style.step}></div>
+          <div className={style.step}></div>
+          <div className={style.step}></div>
+          <div className={style.step}></div>
+        </div>
       </div>
     );
   }
