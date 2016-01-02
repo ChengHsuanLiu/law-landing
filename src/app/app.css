@@ -13,8 +13,8 @@ h1 {
 h1.even {
   color: #FFFFFF;
   font-size: 25px;
-  padding-top: 48px;
-  padding-bottom: 25px;
+  padding-top: 38px;
+  padding-bottom: 20px;
 }
 
 section {
@@ -32,6 +32,7 @@ section {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 36px;
+  padding-bottom: 90px;
 }
 
 .wrapper {
@@ -50,23 +51,46 @@ section {
 }
 
 /* nav */
-.nav {
+.navbar {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.nav {
   height: 50px;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.nav > *:first-child {
+  margin-left: 20px;
+}
+
+.nav > *:last-child {
+  margin-right: 20px;
+}
+
+.nav a {
+  padding-right: 38px;
+}
+.nav a:last-child {
+  padding-right: 0px;
 }
 
 /* main */
+.main {
+  flex-direction: column;
+  margin-top: -3%;
+}
+
 .title {
   font-size: 45px;
   font-weight: normal;
   color: #FFFFFF;
+  padding-bottom: 15px;
 }
 
 .subTitle {
@@ -76,6 +100,7 @@ section {
 }
 
 .note {
+  font-size: 24px;
   font-weight: 300;
   text-align: center;
 }
@@ -116,4 +141,22 @@ section {
   text-align: center;
   font-weight: 500;
   color: #FFFFFF;
+}
+
+/* footer */
+.link {
+  padding-top: 36px;
+}
+
+.app {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 245px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.copyright {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }

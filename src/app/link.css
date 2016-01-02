@@ -2,8 +2,14 @@
   font-size: 18px;
   color: #00A9CE;
   line-height: 27px;
+  cursor: pointer;
 }
 
 .link:after {
-  content: '．'
+  content: '．';
+  cursor: default;
+}
+
+.link:last-child:after {
+  content: ''
 }

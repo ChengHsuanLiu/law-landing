@@ -13,16 +13,18 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <nav className={style.nav}>
-          <div>呼叫律師</div>
-          <div>
-            <a>如何使用</a>
-            <a>費用說明</a>
+        <nav className={style.navbar}>
+          <div className={c(style.wrapper, style.nav)}>
+            <div>呼叫律師</div>
+            <div>
+              <a>如何使用</a>
+              <a>費用說明</a>
+            </div>
           </div>
         </nav>
-        <div className={style.main}>
+        <div>
           <img src="./image/main.png" className={style.fullImage}/>
-          <div className={style.overlay}>
+          <div className={c(style.wrapper, style.overlay, style.main)}>
             <h1 className={style.title}>呼叫律師</h1>
             <div className={style.subTitle}>24 小時警局陪同作筆錄</div>
             <div className={style.note}>迅速、專業的警局救援就在您身邊</div>

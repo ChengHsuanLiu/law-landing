@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f9f525e7f7c15e129ef6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "58c2f94edbc78c29d165"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -812,34 +812,38 @@
 	        null,
 	        _react2.default.createElement(
 	          'nav',
-	          { className: _app2.default.nav },
+	          { className: _app2.default.navbar },
 	          _react2.default.createElement(
 	            'div',
-	            null,
-	            '呼叫律師'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            null,
+	            { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.nav) },
 	            _react2.default.createElement(
-	              'a',
+	              'div',
 	              null,
-	              '如何使用'
+	              '呼叫律師'
 	            ),
 	            _react2.default.createElement(
-	              'a',
+	              'div',
 	              null,
-	              '費用說明'
+	              _react2.default.createElement(
+	                'a',
+	                null,
+	                '如何使用'
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                null,
+	                '費用說明'
+	              )
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: _app2.default.main },
+	          null,
 	          _react2.default.createElement('img', { src: './image/main.png', className: _app2.default.fullImage }),
 	          _react2.default.createElement(
 	            'div',
-	            { className: _app2.default.overlay },
+	            { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.overlay, _app2.default.main) },
 	            _react2.default.createElement(
 	              'h1',
 	              { className: _app2.default.title },
@@ -21784,7 +21788,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"even":"app__even","fullImage":"app__fullImage","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","nav":"app__nav","title":"app__title","subTitle":"app__subTitle","note":"app__note","step":"app__step","quality":"app__quality","feedback":"app__feedback","comment":"app__comment","slogan":"app__slogan"};
+	module.exports = {"even":"app__even","fullImage":"app__fullImage","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","main":"app__main","title":"app__title","subTitle":"app__subTitle","note":"app__note","step":"app__step","quality":"app__quality","feedback":"app__feedback","comment":"app__comment","slogan":"app__slogan","link":"app__link","app":"app__app","copyright":"app__copyright"};
 
 /***/ }
 /******/ ]);

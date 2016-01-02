@@ -22,6 +22,7 @@
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 60px;
+  cursor: pointer;
 }.card__card {
   width: 200px;
   height: 450px;
@@ -71,10 +72,16 @@
   font-size: 18px;
   color: #00A9CE;
   line-height: 27px;
+  cursor: pointer;
 }
 
 .link__link:after {
-  content: '\FF0E'
+  content: '\FF0E';
+  cursor: default;
+}
+
+.link__link:last-child:after {
+  content: ''
 }h1 {
   width: 100%;
   text-align: center;
@@ -90,8 +97,8 @@
 h1.app__even {
   color: #FFFFFF;
   font-size: 25px;
-  padding-top: 48px;
-  padding-bottom: 25px;
+  padding-top: 38px;
+  padding-bottom: 20px;
 }
 
 section {
@@ -109,6 +116,7 @@ section {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 36px;
+  padding-bottom: 90px;
 }
 
 .app__wrapper {
@@ -136,32 +144,53 @@ section {
 }
 
 /* nav */
-.app__nav {
+.app__navbar {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.app__nav {
   height: 50px;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.app__nav > *:first-child {
+  margin-left: 20px;
+}
+
+.app__nav > *:last-child {
+  margin-right: 20px;
+}
+
+.app__nav a {
+  padding-right: 38px;
+}
+.app__nav a:last-child {
+  padding-right: 0px;
 }
 
 /* main */
+.app__main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -3%;
+}
+
 .app__title {
   font-size: 45px;
   font-weight: normal;
   color: #FFFFFF;
+  padding-bottom: 15px;
 }
 
 .app__subTitle {
@@ -171,6 +200,7 @@ section {
 }
 
 .app__note {
+  font-size: 24px;
   font-weight: 300;
   text-align: center;
 }
@@ -221,4 +251,25 @@ section {
   text-align: center;
   font-weight: 500;
   color: #FFFFFF;
+}
+
+/* footer */
+.app__link {
+  padding-top: 36px;
+}
+
+.app__app {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 245px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app__copyright {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
