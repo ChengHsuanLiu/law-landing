@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a25855d1a6941385155a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f9f525e7f7c15e129ef6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -782,7 +782,15 @@
 
 	var _card2 = _interopRequireDefault(_card);
 
-	var _app = __webpack_require__(217);
+	var _comment = __webpack_require__(217);
+
+	var _comment2 = _interopRequireDefault(_comment);
+
+	var _link = __webpack_require__(219);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	var _app = __webpack_require__(221);
 
 	var _app2 = _interopRequireDefault(_app);
 
@@ -803,7 +811,7 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'div',
+	          'nav',
 	          { className: _app2.default.nav },
 	          _react2.default.createElement(
 	            'div',
@@ -835,16 +843,16 @@
 	            _react2.default.createElement(
 	              'h1',
 	              { className: _app2.default.title },
-	              '快速呼叫律師'
+	              '呼叫律師'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              null,
+	              { className: _app2.default.subTitle },
 	              '24 小時警局陪同作筆錄'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              null,
+	              { className: _app2.default.note },
 	              '迅速、專業的警局救援就在您身邊'
 	            ),
 	            _react2.default.createElement(
@@ -855,60 +863,64 @@
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
+	          'article',
 	          { className: _app2.default.container },
 	          _react2.default.createElement(
-	            'h1',
+	            'section',
 	            null,
-	            '快速呼叫律師'
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              '快速呼叫律師'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.step) },
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '1句話',
+	                  image: './image/step1.png'
+	                },
+	                '只要 1 句話:「我要請律師」所有的偵訊程序一切停止'
+	              ),
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '快速定位',
+	                  image: './image/step2.png'
+	                },
+	                '拿出智慧型手機 GPS 定位，選擇您所在的警察局，您的專屬律師馬上前往救援'
+	              ),
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '100 秒搜尋',
+	                  image: './image/step3.png'
+	                },
+	                '只要 100 秒即可搜尋您附近的律師，各地都有您的專屬律師守護著您'
+	              ),
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '30分鐘抵達',
+	                  image: './image/step4.png'
+	                },
+	                '您的專屬律師 30 分鐘馬上抵達，依照法律規定，您的律師抵達前偵訊停止進行'
+	              ),
+	              _react2.default.createElement(_card2.default, {
+	                label: '保持緘默 耐心等候',
+	                image: './image/step5.png' })
+	            ),
+	            _react2.default.createElement(
+	              _enter2.default,
+	              null,
+	              '開始使用'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.step) },
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '1句話',
-	                image: './image/step1.png'
-	              },
-	              '只要 1 句話:「我要請律師」所有的偵訊程序一切停止'
-	            ),
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '快速定位',
-	                image: './image/step2.png'
-	              },
-	              '拿出智慧型手機 GPS 定位，選擇您所在的警察局，您的專屬律師馬上前往救援'
-	            ),
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '100 秒搜尋',
-	                image: './image/step3.png'
-	              },
-	              '只要 100 秒即可搜尋您附近的律師，各地都有您的專屬律師守護著您'
-	            ),
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '30分鐘抵達',
-	                image: './image/step4.png'
-	              },
-	              '您的專屬律師 30 分鐘馬上抵達，依照法律規定，您的律師抵達前偵訊停止進行'
-	            ),
-	            _react2.default.createElement(_card2.default, {
-	              label: '保持緘默 耐心等候',
-	              image: './image/step5.png' })
-	          ),
-	          _react2.default.createElement(
-	            _enter2.default,
+	            'section',
 	            null,
-	            '開始使用'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: _app2.default.cost },
 	            _react2.default.createElement('img', { src: './image/cost_landscape.png', className: _app2.default.fullImage }),
 	            _react2.default.createElement(
 	              'div',
@@ -920,71 +932,46 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: _app2.default.note },
 	                '呼叫律師按小時收費，最低收費為2小時'
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'h1',
+	            'section',
 	            null,
-	            '呼叫律師 3大保證'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.quality) },
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '專業合格律師',
-	                image: './image/quality_professional.png'
-	              },
-	              '每位律師都是經過法務部認證、專業又合格的律師，確實把關守護您的權益'
-	            ),
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '豐富經驗',
-	                image: './image/quality_experience.png'
-	              },
-	              '每位律師都有多年豐富的執業經驗，各個身經百戰，專屬於您的守護者'
-	            ),
-	            _react2.default.createElement(
-	              _card2.default,
-	              {
-	                label: '迅速抵達',
-	                image: './image/quality_fast.png'
-	              },
-	              '您的專屬律師30分鐘馬上抵達，即使在警察局您再也不必擔心受怕'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _enter2.default,
-	            null,
-	            '開始使用'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.feedback) },
 	            _react2.default.createElement(
 	              'h1',
-	              { className: _app2.default.even },
-	              '來聽聽使用者的故事'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: _app2.default.commit },
-	              '2015年5月路過某個抗議會場附近，竟然被警察誤認成抗議民眾，莫名其妙被壓制、逮捕、銬上囚車，事到如今仍心有餘悸，你絕對不想孤身一人被抓到警察局的。 ─ 莊先生'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: _app2.default.commit },
-	              '一群警察沒有搜索票，突然衝進家裡就說要搜索，硬是要我拿出身分證配合盤查，我拿了手機連上「呼叫律師」，有什麼事情等律師來再講！ ─ 吳先生'
-	            ),
-	            _react2.default.createElement(
-	              'span',
 	              null,
-	              '呼叫律師，專家守護'
+	              '呼叫律師 3大保證'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.quality) },
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '專業合格律師',
+	                  image: './image/quality_professional.png'
+	                },
+	                '每位律師都是經過法務部認證、專業又合格的律師，確實把關守護您的權益'
+	              ),
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '豐富經驗',
+	                  image: './image/quality_experience.png'
+	                },
+	                '每位律師都有多年豐富的執業經驗，各個身經百戰，專屬於您的守護者'
+	              ),
+	              _react2.default.createElement(
+	                _card2.default,
+	                {
+	                  label: '迅速抵達',
+	                  image: './image/quality_fast.png'
+	                },
+	                '您的專屬律師30分鐘馬上抵達，即使在警察局您再也不必擔心受怕'
+	              )
 	            ),
 	            _react2.default.createElement(
 	              _enter2.default,
@@ -993,42 +980,86 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: _app2.default.wrapper },
+	            'section',
+	            null,
+	            _react2.default.createElement('div', { className: _app2.default.feedback }),
 	            _react2.default.createElement(
-	              'a',
-	              { className: _app2.default.link },
-	              '呼叫律師'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { className: _app2.default.link },
-	              '合作提案'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { className: _app2.default.link },
-	              '問題與建議'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { className: _app2.default.link },
-	              '關於我們'
+	              'div',
+	              { className: _app2.default.overlay },
+	              _react2.default.createElement(
+	                'h1',
+	                { className: _app2.default.even },
+	                '來聽聽使用者的故事'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.comment) },
+	                _react2.default.createElement(
+	                  _comment2.default,
+	                  {
+	                    author: '莊先生' },
+	                  '2015年5月路過某個抗議會場附近，竟然被警察誤認成抗議民眾，莫名其妙被壓制、逮捕、銬上囚車，事到如今仍心有餘悸，你絕對不想孤身一人被抓到警察局的。'
+	                ),
+	                _react2.default.createElement(
+	                  _comment2.default,
+	                  {
+	                    author: '吳先生' },
+	                  '一群警察沒有搜索票，突然衝進家裡就說要搜索，硬是要我拿出身分證配合盤查，我拿了手機連上「呼叫律師」，有什麼事情等律師來再講！'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: _app2.default.slogan },
+	                '呼叫律師，專家守護'
+	              ),
+	              _react2.default.createElement(
+	                _enter2.default,
+	                null,
+	                '開始使用'
+	              )
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: _app2.default.wrapper },
-	            _react2.default.createElement('img', { src: './image/ios.png' }),
-	            _react2.default.createElement('img', { src: './image/android.png' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: _app2.default.wrapper },
+	            'footer',
+	            null,
 	            _react2.default.createElement(
-	              'span',
-	              null,
-	              'COPYRIGHT © 2015 Lawcall ALL RIGHTS RESERVED.'
+	              'div',
+	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.link) },
+	              _react2.default.createElement(
+	                _link2.default,
+	                null,
+	                '呼叫律師'
+	              ),
+	              _react2.default.createElement(
+	                _link2.default,
+	                null,
+	                '合作提案'
+	              ),
+	              _react2.default.createElement(
+	                _link2.default,
+	                null,
+	                '問題與建議'
+	              ),
+	              _react2.default.createElement(
+	                _link2.default,
+	                null,
+	                '關於我們'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.app) },
+	              _react2.default.createElement('img', { src: './image/ios.png' }),
+	              _react2.default.createElement('img', { src: './image/android.png' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.copyright) },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'COPYRIGHT © 2015 Lawcall ALL RIGHTS RESERVED.'
+	              )
 	            )
 	          )
 	        )
@@ -21654,10 +21685,106 @@
 
 /***/ },
 /* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(54);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(211);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _classnames = __webpack_require__(212);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _comment = __webpack_require__(218);
+
+	var _comment2 = _interopRequireDefault(_comment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function (props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _comment2.default.comment },
+	    _react2.default.createElement(
+	      'div',
+	      null,
+	      props.children
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: _comment2.default.author },
+	      '─ ',
+	      props.author
+	    )
+	  );
+	};
+
+/***/ },
+/* 218 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"even":"app__even","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","fullImage":"app__fullImage","nav":"app__nav","title":"app__title","step":"app__step","quality":"app__quality","feedback":"app__feedback","commit":"app__commit","cost":"app__cost","main":"app__main","link":"app__link"};
+	module.exports = {"comment":"comment__comment","author":"comment__author"};
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(54);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(211);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _classnames = __webpack_require__(212);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _link = __webpack_require__(220);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function (props) {
+	  return _react2.default.createElement(
+	    'a',
+	    { className: _link2.default.link },
+	    props.children
+	  );
+	};
+
+/***/ },
+/* 220 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"link":"link__link"};
+
+/***/ },
+/* 221 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"even":"app__even","fullImage":"app__fullImage","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","nav":"app__nav","title":"app__title","subTitle":"app__subTitle","note":"app__note","step":"app__step","quality":"app__quality","feedback":"app__feedback","comment":"app__comment","slogan":"app__slogan"};
 
 /***/ }
 /******/ ]);

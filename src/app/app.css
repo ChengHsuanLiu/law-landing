@@ -4,14 +4,25 @@ h1 {
   font-size: 30px;
   color: #515151;
   line-height: 45px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 71px;
+  padding-bottom: 64px;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 h1.even {
   color: #FFFFFF;
   font-size: 25px;
+  padding-top: 48px;
+  padding-bottom: 25px;
+}
+
+section {
+  position: relative;
+}
+
+.fullImage {
+  width: 100%;
 }
 
 .container {
@@ -38,10 +49,7 @@ h1.even {
   left: 0;
 }
 
-.fullImage {
-  width: 100%;
-}
-
+/* nav */
 .nav {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
@@ -54,51 +62,58 @@ h1.even {
   padding-right: 20px;
 }
 
+/* main */
 .title {
-  color: #FFFFFF;
   font-size: 45px;
+  font-weight: normal;
+  color: #FFFFFF;
 }
 
+.subTitle {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.note {
+  font-weight: 300;
+  text-align: center;
+}
+
+/* step */
 .step {
   justify-content: space-between;
   max-width: 1145px;
   margin: 0 auto;
 }
 
+/* fee */
+
+
+/* quality */
 .quality {
   justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;
 }
 
+/* feedback */
 .feedback {
   height: 570px;
   background-image: url('../www/image/feedback.png');
   background-size: cover;
+}
+
+.comment {
   flex-direction: column;
 }
 
-.commit {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  font-size: 16px;
+.comment > * {
+  padding-bottom: 30px;
+}
+
+.slogan {
+  text-align: center;
+  font-weight: 500;
   color: #FFFFFF;
-  line-height: 25px;
-  text-shadow: 0px 0px 5px rgba(0,0,0,0.50);
-}
-
-.cost,
-.main {
-  position: relative;
-}
-
-.link {
-  font-size: 18px;
-  color: #00A9CE;
-  line-height: 27px;
-}
-
-.link {
-  content: '．'
 }

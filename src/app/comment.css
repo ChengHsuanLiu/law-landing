@@ -1,0 +1,13 @@
+.comment {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 25px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.50);
+}
+
+.author {
+  text-align: right;
+}

@@ -5,6 +5,7 @@
   width: 200px;
   height: 59px;
   font-size: 20px;
+  font-weight: 500;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -47,24 +48,58 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+  font-weight: 500;
 }
 
 .card__content {
+  font-size: 16px;
+  line-height: 22px;
   text-align: left;
+}.comment__comment {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 25px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.50);
+}
+
+.comment__author {
+  text-align: right;
+}.link__link {
+  font-size: 18px;
+  color: #00A9CE;
+  line-height: 27px;
+}
+
+.link__link:after {
+  content: '\FF0E'
 }h1 {
   width: 100%;
   text-align: center;
   font-size: 30px;
   color: #515151;
   line-height: 45px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 71px;
+  padding-bottom: 64px;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 h1.app__even {
   color: #FFFFFF;
   font-size: 25px;
+  padding-top: 48px;
+  padding-bottom: 25px;
+}
+
+section {
+  position: relative;
+}
+
+.app__fullImage {
+  width: 100%;
 }
 
 .app__container {
@@ -100,10 +135,7 @@ h1.app__even {
   left: 0;
 }
 
-.app__fullImage {
-  width: 100%;
-}
-
+/* nav */
 .app__nav {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
@@ -125,11 +157,25 @@ h1.app__even {
   padding-right: 20px;
 }
 
+/* main */
 .app__title {
-  color: #FFFFFF;
   font-size: 45px;
+  font-weight: normal;
+  color: #FFFFFF;
 }
 
+.app__subTitle {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.app__note {
+  font-weight: 300;
+  text-align: center;
+}
+
+/* step */
 .app__step {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -139,6 +185,10 @@ h1.app__even {
   margin: 0 auto;
 }
 
+/* fee */
+
+
+/* quality */
 .app__quality {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -148,10 +198,14 @@ h1.app__even {
   margin: 0 auto;
 }
 
+/* feedback */
 .app__feedback {
   height: 570px;
   background-image: url(5ae62cb0629850d10af8d9c650ff4d96.png);
   background-size: cover;
+}
+
+.app__comment {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -159,27 +213,12 @@ h1.app__even {
           flex-direction: column;
 }
 
-.app__commit {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  font-size: 16px;
+.app__comment > * {
+  padding-bottom: 30px;
+}
+
+.app__slogan {
+  text-align: center;
+  font-weight: 500;
   color: #FFFFFF;
-  line-height: 25px;
-  text-shadow: 0px 0px 5px rgba(0,0,0,0.50);
-}
-
-.app__cost,
-.app__main {
-  position: relative;
-}
-
-.app__link {
-  font-size: 18px;
-  color: #00A9CE;
-  line-height: 27px;
-}
-
-.app__link {
-  content: '\FF0E'
 }
