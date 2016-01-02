@@ -1,0 +1,22 @@
+.card {
+  width: 200px;
+  height: 450px;
+  text-align: center;
+}
+
+.image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.content {
+  text-align: left;
+}
