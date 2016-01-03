@@ -7,6 +7,9 @@
   font-size: 20px;
   font-weight: 500;
   color: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,9 +22,6 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
   cursor: pointer;
 }.card__card {
   width: 200px;
@@ -56,23 +56,51 @@
   font-size: 16px;
   line-height: 22px;
   text-align: left;
+}
+
+
+@media screen and (max-width: 640px) {
+  .card__card {
+    width: 150px;
+  }
+
+  .card__column {
+    height: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .card__column .card__image {
+    margin-right: 50px;
+  }
 }.comment__comment {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  font-size: 16px;
-  color: #FFFFFF;
-  line-height: 25px;
   text-shadow: 0px 0px 5px rgba(0,0,0,0.50);
+  text-align: left;
 }
 
 .comment__author {
   text-align: right;
 }.link__link {
-  font-size: 18px;
-  color: #00A9CE;
+  font-size: 14px;
+  font-weight: normal;
   line-height: 27px;
   cursor: pointer;
+  color: #00A9CE;
+  display: inline-block;
 }
 
 .link__link:after {
@@ -82,31 +110,62 @@
 
 .link__link:last-child:after {
   content: ''
-}h1 {
-  width: 100%;
+}html, body {
+  font-family: "Noto Sans", "Noto Sans CJK TC", sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  font-size: 30px;
-  color: #515151;
-  line-height: 45px;
-  padding-top: 71px;
-  padding-bottom: 64px;
-  margin: 0 auto;
-  font-weight: 500;
 }
 
-h1.app__even {
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.app__title {
+  font-size: 45px;
+  font-weight: normal;
   color: #FFFFFF;
-  font-size: 25px;
-  padding-top: 38px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 71px;
+  padding-bottom: 64px;
+  color: #515151;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 section {
   position: relative;
 }
 
-.app__fullImage {
-  width: 100%;
+
+.app__even {
+  color: #FFFFFF;
+}
+
+.app__even h1 {
+  font-size: 25px;
+  padding-top: 38px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
 }
 
 .app__container {
@@ -170,39 +229,48 @@ section {
 }
 
 .app__nav a {
+  color: #515151;
   padding-right: 38px;
 }
 .app__nav a:last-child {
   padding-right: 0px;
 }
 
-/* main */
-.app__main {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: -3%;
+.app__nav a:after {
+  content: '';
 }
 
-.app__title {
-  font-size: 45px;
-  font-weight: normal;
-  color: #FFFFFF;
-  padding-bottom: 15px;
+/* cover */
+.app__cover {
+  position: relative;
 }
 
-.app__subTitle {
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
+.app__cover > img {
+  width: 100%;
 }
 
-.app__note {
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center;
+@media screen and (max-width: 640px) {
+  .app__cover {
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .app__cover > img {
+    height: 100%;
+    width: inherit;
+    position: absolute;
+    left: 50%;
+    margin-left: -1300px;
+  }
+
+  .app__main {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    color: #FFFFFF;
+  }
 }
 
 /* step */
@@ -215,8 +283,39 @@ section {
   margin: 0 auto;
 }
 
-/* fee */
+@media screen and (max-width: 640px) {
+  .app__step {
+    width: 540px;
+  }
 
+  .app__step > *:first-child,
+  .app__step > *:last-child {
+    display: none;
+  }
+}
+
+/* fee */
+.app__note {
+  color: #000000;
+}
+
+.app__fee > img {
+  width: 100%;
+}
+
+.app__portrait {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .app__landscape {
+    display: none;
+  }
+
+  .app__portrait {
+    display: block;
+  }
+}
 
 /* quality */
 .app__quality {
@@ -228,6 +327,22 @@ section {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 640px) {
+  .app__quality {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 430px;
+    height: 650px;
+  }
+}
+
 /* feedback */
 .app__feedback {
   height: 570px;
@@ -236,6 +351,7 @@ section {
 }
 
 .app__comment {
+  color: #FFFFFF;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -244,13 +360,7 @@ section {
 }
 
 .app__comment > * {
-  padding-bottom: 30px;
-}
-
-.app__slogan {
-  text-align: center;
-  font-weight: 500;
-  color: #FFFFFF;
+  padding-bottom: 22px;
 }
 
 /* footer */

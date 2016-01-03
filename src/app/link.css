@@ -1,8 +1,10 @@
 .link {
-  font-size: 18px;
-  color: #00A9CE;
+  font-size: 14px;
+  font-weight: normal;
   line-height: 27px;
   cursor: pointer;
+  color: #00A9CE;
+  display: inline-block;
 }
 
 .link:after {

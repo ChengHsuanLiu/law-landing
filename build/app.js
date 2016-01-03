@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "58c2f94edbc78c29d165"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b0f4d4a8197a972128aa"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -825,12 +825,12 @@
 	              'div',
 	              null,
 	              _react2.default.createElement(
-	                'a',
+	                _link2.default,
 	                null,
 	                '如何使用'
 	              ),
 	              _react2.default.createElement(
-	                'a',
+	                _link2.default,
 	                null,
 	                '費用說明'
 	              )
@@ -838,37 +838,45 @@
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement('img', { src: './image/main.png', className: _app2.default.fullImage }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.overlay, _app2.default.main) },
-	            _react2.default.createElement(
-	              'h1',
-	              { className: _app2.default.title },
-	              '呼叫律師'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: _app2.default.subTitle },
-	              '24 小時警局陪同作筆錄'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: _app2.default.note },
-	              '迅速、專業的警局救援就在您身邊'
-	            ),
-	            _react2.default.createElement(
-	              _enter2.default,
-	              null,
-	              '開始使用'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
 	          'article',
 	          { className: _app2.default.container },
+	          _react2.default.createElement(
+	            'section',
+	            null,
+	            _react2.default.createElement(
+	              'div',
+	              { className: _app2.default.cover },
+	              _react2.default.createElement('img', { src: './image/main.png' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: (0, _classnames2.default)(_app2.default.overlay, _app2.default.wrapper, _app2.default.main) },
+	              _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                  'h1',
+	                  { className: _app2.default.title },
+	                  '呼叫律師'
+	                ),
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  '24 小時警局陪同作筆錄'
+	                ),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  '迅速、專業的警局救援就在您身邊'
+	                ),
+	                _react2.default.createElement(
+	                  _enter2.default,
+	                  null,
+	                  '開始使用'
+	                )
+	              )
+	            )
+	          ),
 	          _react2.default.createElement(
 	            'section',
 	            null,
@@ -924,14 +932,19 @@
 	          ),
 	          _react2.default.createElement(
 	            'section',
-	            null,
-	            _react2.default.createElement('img', { src: './image/cost_landscape.png', className: _app2.default.fullImage }),
+	            { className: _app2.default.even },
+	            _react2.default.createElement(
+	              'div',
+	              { className: _app2.default.fee },
+	              _react2.default.createElement('img', { className: _app2.default.landscape, src: './image/fee_landscape.png' }),
+	              _react2.default.createElement('img', { className: _app2.default.portrait, src: './image/fee_portrait.png' })
+	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: _app2.default.overlay },
 	              _react2.default.createElement(
 	                'h1',
-	                { className: _app2.default.even },
+	                null,
 	                '呼叫律師如何收費？'
 	              ),
 	              _react2.default.createElement(
@@ -956,7 +969,8 @@
 	                _card2.default,
 	                {
 	                  label: '專業合格律師',
-	                  image: './image/quality_professional.png'
+	                  image: './image/quality_professional.png',
+	                  column: true
 	                },
 	                '每位律師都是經過法務部認證、專業又合格的律師，確實把關守護您的權益'
 	              ),
@@ -964,7 +978,8 @@
 	                _card2.default,
 	                {
 	                  label: '豐富經驗',
-	                  image: './image/quality_experience.png'
+	                  image: './image/quality_experience.png',
+	                  column: true
 	                },
 	                '每位律師都有多年豐富的執業經驗，各個身經百戰，專屬於您的守護者'
 	              ),
@@ -972,7 +987,8 @@
 	                _card2.default,
 	                {
 	                  label: '迅速抵達',
-	                  image: './image/quality_fast.png'
+	                  image: './image/quality_fast.png',
+	                  column: true
 	                },
 	                '您的專屬律師30分鐘馬上抵達，即使在警察局您再也不必擔心受怕'
 	              )
@@ -985,14 +1001,14 @@
 	          ),
 	          _react2.default.createElement(
 	            'section',
-	            null,
+	            { className: _app2.default.even },
 	            _react2.default.createElement('div', { className: _app2.default.feedback }),
 	            _react2.default.createElement(
 	              'div',
 	              { className: _app2.default.overlay },
 	              _react2.default.createElement(
 	                'h1',
-	                { className: _app2.default.even },
+	                null,
 	                '來聽聽使用者的故事'
 	              ),
 	              _react2.default.createElement(
@@ -1012,8 +1028,8 @@
 	                )
 	              ),
 	              _react2.default.createElement(
-	                'div',
-	                { className: _app2.default.slogan },
+	                'h2',
+	                null,
 	                '呼叫律師，專家守護'
 	              ),
 	              _react2.default.createElement(
@@ -21661,21 +21677,25 @@
 	exports.default = function (props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: _card2.default.card },
+	    { className: (0, _classnames2.default)(_card2.default.card, props.column && _card2.default.column) },
 	    _react2.default.createElement(
 	      'div',
 	      { className: _card2.default.image },
 	      _react2.default.createElement('img', { src: props.image })
 	    ),
 	    _react2.default.createElement(
-	      'h2',
-	      { className: _card2.default.label },
-	      props.label
-	    ),
-	    _react2.default.createElement(
 	      'div',
-	      { className: _card2.default.content },
-	      props.children
+	      null,
+	      _react2.default.createElement(
+	        'h2',
+	        { className: _card2.default.label },
+	        props.label
+	      ),
+	      _react2.default.createElement(
+	        'h3',
+	        { className: _card2.default.content },
+	        props.children
+	      )
 	    )
 	  );
 	};
@@ -21685,7 +21705,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"card":"card__card","image":"card__image","label":"card__label","content":"card__content"};
+	module.exports = {"card":"card__card","image":"card__image","label":"card__label","content":"card__content","column":"card__column"};
 
 /***/ },
 /* 217 */
@@ -21720,12 +21740,12 @@
 	    'div',
 	    { className: _comment2.default.comment },
 	    _react2.default.createElement(
-	      'div',
+	      'h3',
 	      null,
 	      props.children
 	    ),
 	    _react2.default.createElement(
-	      'div',
+	      'h3',
 	      { className: _comment2.default.author },
 	      '─ ',
 	      props.author
@@ -21788,7 +21808,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"even":"app__even","fullImage":"app__fullImage","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","main":"app__main","title":"app__title","subTitle":"app__subTitle","note":"app__note","step":"app__step","quality":"app__quality","feedback":"app__feedback","comment":"app__comment","slogan":"app__slogan","link":"app__link","app":"app__app","copyright":"app__copyright"};
+	module.exports = {"title":"app__title","even":"app__even","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","cover":"app__cover","main":"app__main","step":"app__step","note":"app__note","fee":"app__fee","portrait":"app__portrait","landscape":"app__landscape","quality":"app__quality","feedback":"app__feedback","comment":"app__comment","link":"app__link","app":"app__app","copyright":"app__copyright"};
 
 /***/ }
 /******/ ]);

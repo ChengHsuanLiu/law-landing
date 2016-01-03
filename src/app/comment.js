@@ -7,8 +7,8 @@ import style from './comment.css';
 export default (props) => {
   return (
     <div className={style.comment}>
-      <div>{props.children}</div>
-      <div className={style.author}>─ {props.author}</div>
+      <h3>{props.children}</h3>
+      <h3 className={style.author}>─ {props.author}</h3>
     </div>
   );
 };

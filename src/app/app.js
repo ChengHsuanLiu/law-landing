@@ -17,21 +17,25 @@ class App extends React.Component {
           <div className={c(style.wrapper, style.nav)}>
             <div>呼叫律師</div>
             <div>
-              <a>如何使用</a>
-              <a>費用說明</a>
+              <Link>如何使用</Link>
+              <Link>費用說明</Link>
             </div>
           </div>
         </nav>
-        <div>
-          <img src="./image/main.png" className={style.fullImage}/>
-          <div className={c(style.wrapper, style.overlay, style.main)}>
-            <h1 className={style.title}>呼叫律師</h1>
-            <div className={style.subTitle}>24 小時警局陪同作筆錄</div>
-            <div className={style.note}>迅速、專業的警局救援就在您身邊</div>
-            <Enter>開始使用</Enter>
-          </div>
-        </div>
         <article className={style.container}>
+          <section>
+            <div className={style.cover}>
+              <img src="./image/main.png" />
+            </div>
+            <div className={c(style.overlay, style.wrapper, style.main)}>
+              <div>
+                <h1 className={style.title}>呼叫律師</h1>
+                <h2>24 小時警局陪同作筆錄</h2>
+                <h3>迅速、專業的警局救援就在您身邊</h3>
+                <Enter>開始使用</Enter>
+              </div>
+            </div>
+          </section>
           <section>
             <h1>快速呼叫律師</h1>
             <div className={c(style.wrapper, style.step)}>
@@ -65,10 +69,13 @@ class App extends React.Component {
             </div>
             <Enter>開始使用</Enter>
           </section>
-          <section>
-            <img src="./image/cost_landscape.png" className={style.fullImage}/>
+          <section className={style.even}>
+            <div className={style.fee}>
+              <img className={style.landscape} src="./image/fee_landscape.png" />
+              <img className={style.portrait} src="./image/fee_portrait.png" />
+            </div>
             <div className={style.overlay}>
-              <h1 className={style.even}>呼叫律師如何收費？</h1>
+              <h1>呼叫律師如何收費？</h1>
               <div className={style.note}>呼叫律師按小時收費，最低收費為2小時</div>
             </div>
           </section>
@@ -78,28 +85,31 @@ class App extends React.Component {
               <Card
                 label="專業合格律師"
                 image="./image/quality_professional.png"
+                column={true}
                 >
                 每位律師都是經過法務部認證、專業又合格的律師，確實把關守護您的權益
               </Card>
               <Card
                 label="豐富經驗"
                 image="./image/quality_experience.png"
+                column={true}
                 >
                 每位律師都有多年豐富的執業經驗，各個身經百戰，專屬於您的守護者
               </Card>
               <Card
                 label="迅速抵達"
                 image="./image/quality_fast.png"
+                column={true}
                 >
                 您的專屬律師30分鐘馬上抵達，即使在警察局您再也不必擔心受怕
               </Card>
             </div>
             <Enter>開始使用</Enter>
           </section>
-          <section>
+          <section className={style.even}>
             <div className={style.feedback}></div>
             <div className={style.overlay}>
-              <h1 className={style.even}>來聽聽使用者的故事</h1>
+              <h1>來聽聽使用者的故事</h1>
               <div className={c(style.wrapper, style.comment)}>
                 <Comment
                   author="莊先生">
@@ -110,7 +120,7 @@ class App extends React.Component {
                   一群警察沒有搜索票，突然衝進家裡就說要搜索，硬是要我拿出身分證配合盤查，我拿了手機連上「呼叫律師」，有什麼事情等律師來再講！
                 </Comment>
               </div>
-              <div className={style.slogan}>呼叫律師，專家守護</div>
+              <h2>呼叫律師，專家守護</h2>
               <Enter>開始使用</Enter>
             </div>
           </section>
