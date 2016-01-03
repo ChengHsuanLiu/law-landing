@@ -17,8 +17,8 @@ class App extends React.Component {
           <div className={c(style.wrapper, style.nav)}>
             <div>呼叫律師</div>
             <div>
-              <Link>如何使用</Link>
-              <Link>費用說明</Link>
+              <Link href="#step">如何使用</Link>
+              <Link href="#fee">費用說明</Link>
             </div>
           </div>
         </nav>
@@ -36,7 +36,7 @@ class App extends React.Component {
               </div>
             </div>
           </section>
-          <section>
+          <section id="step">
             <h1>快速呼叫律師</h1>
             <div className={c(style.wrapper, style.step)}>
               <Card
@@ -69,7 +69,7 @@ class App extends React.Component {
             </div>
             <Enter>開始使用</Enter>
           </section>
-          <section className={style.even}>
+          <section className={style.even} id="fee">
             <div className={style.fee}>
               <img className={style.landscape} src="./image/fee_landscape.png" />
               <img className={style.portrait} src="./image/fee_portrait.png" />
@@ -126,14 +126,18 @@ class App extends React.Component {
           </section>
           <footer>
             <div className={c(style.wrapper, style.link)}>
-              <Link>呼叫律師</Link>
+              <Link href="#">呼叫律師</Link>
               <Link>合作提案</Link>
               <Link>問題與建議</Link>
               <Link>關於我們</Link>
             </div>
             <div className={c(style.wrapper, style.app)}>
-              <img src="./image/ios.png" />
-              <img src="./image/android.png" />
+              <a href="https://itunes.apple.com/us/app/facebook/id1020908548">
+                <img src="./image/ios.png" />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.tin.lawyer">
+                <img src="./image/android.png" />
+              </a>
             </div>
             <div className={c(style.wrapper, style.copyright)}>
               <span>COPYRIGHT © 2015 Lawcall ALL RIGHTS RESERVED.</span>

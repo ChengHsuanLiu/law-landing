@@ -5,6 +5,7 @@
   cursor: pointer;
   color: #00A9CE;
   display: inline-block;
+  text-decoration: none;
 }
 
 .link:after {

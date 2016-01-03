@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b0f4d4a8197a972128aa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f908c0fd178d020e7a41"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -826,12 +826,12 @@
 	              null,
 	              _react2.default.createElement(
 	                _link2.default,
-	                null,
+	                { href: '#step' },
 	                '如何使用'
 	              ),
 	              _react2.default.createElement(
 	                _link2.default,
-	                null,
+	                { href: '#fee' },
 	                '費用說明'
 	              )
 	            )
@@ -879,7 +879,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'section',
-	            null,
+	            { id: 'step' },
 	            _react2.default.createElement(
 	              'h1',
 	              null,
@@ -932,7 +932,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'section',
-	            { className: _app2.default.even },
+	            { className: _app2.default.even, id: 'fee' },
 	            _react2.default.createElement(
 	              'div',
 	              { className: _app2.default.fee },
@@ -1047,7 +1047,7 @@
 	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.link) },
 	              _react2.default.createElement(
 	                _link2.default,
-	                null,
+	                { href: '#' },
 	                '呼叫律師'
 	              ),
 	              _react2.default.createElement(
@@ -1069,8 +1069,16 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.app) },
-	              _react2.default.createElement('img', { src: './image/ios.png' }),
-	              _react2.default.createElement('img', { src: './image/android.png' })
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://itunes.apple.com/us/app/facebook/id1020908548' },
+	                _react2.default.createElement('img', { src: './image/ios.png' })
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://play.google.com/store/apps/details?id=com.tin.lawyer' },
+	                _react2.default.createElement('img', { src: './image/android.png' })
+	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -21634,7 +21642,7 @@
 	exports.default = function (props) {
 	  return _react2.default.createElement(
 	    'a',
-	    { className: _enter2.default.enter },
+	    { className: _enter2.default.enter, href: 'http://www.lawcall.tw/' },
 	    props.children
 	  );
 	};
@@ -21791,7 +21799,7 @@
 	exports.default = function (props) {
 	  return _react2.default.createElement(
 	    'a',
-	    { className: _link2.default.link },
+	    { className: _link2.default.link, href: props.href },
 	    props.children
 	  );
 	};

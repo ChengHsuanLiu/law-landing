@@ -5,5 +5,5 @@ import c from 'classnames';
 import style from './link.css';
 
 export default (props) => {
-  return <a className={style.link}>{props.children}</a>;
+  return <a className={style.link} href={props.href}>{props.children}</a>;
 };
