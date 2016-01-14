@@ -4,11 +4,13 @@ import c from 'classnames';
 
 import style from './card.css';
 
+import transparent from '../www/image/transparent.png'
+
 export default (props) => {
   return (
-    <div className={c(style.card, props.column && style.column)}>
-      <div className={style.image}>
-        <img src={props.image} />
+    <div className={c(style.card)}>
+      <div className={c(style.image, props.imageClass)}>
+        <img src={transparent} />
       </div>
       <div>
         <h2 className={style.label}>{props.label}</h2>

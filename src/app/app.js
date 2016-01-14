@@ -24,9 +24,7 @@ class App extends React.Component {
         </nav>
         <article className={style.container}>
           <section>
-            <div className={style.cover}>
-              <img src="./image/main.png" />
-            </div>
+            <div className={style.cover} />
             <div className={c(style.overlay, style.wrapper, style.main)}>
               <div>
                 <h1 className={style.title}>呼叫律師</h1>
@@ -38,41 +36,37 @@ class App extends React.Component {
           </section>
           <section id="step">
             <h1>快速呼叫律師</h1>
-            <div className={c(style.wrapper, style.step)}>
+            <div className={style.step}>
               <Card
                 label="1句話"
-                image="./image/step1.png"
-                >
+                imageClass={style.step1}>
                 只要 1 句話:「我要請律師」所有的偵訊程序一切停止
               </Card>
               <Card
                 label="快速定位"
-                image="./image/step2.png"
-                >
+                imageClass={style.step2}>
                 拿出智慧型手機 GPS 定位，選擇您所在的警察局，您的專屬律師馬上前往救援
               </Card>
               <Card
                 label="100 秒搜尋"
-                image="./image/step3.png"
-                >
+                imageClass={style.step3}>
                 只要 100 秒即可搜尋您附近的律師，各地都有您的專屬律師守護著您
               </Card>
               <Card
                 label="30分鐘抵達"
-                image="./image/step4.png"
-                >
+                imageClass={style.step4}>
                 您的專屬律師 30 分鐘馬上抵達，依照法律規定，您的律師抵達前偵訊停止進行
               </Card>
               <Card
                 label="保持緘默 耐心等候"
-                image="./image/step5.png" />
+                imageClass={style.step5} />
             </div>
             <Enter>開始使用</Enter>
           </section>
-          <section className={style.even} id="fee">
+          <section id="fee">
             <div className={style.fee}>
-              <img className={style.landscape} src="./image/fee_landscape.png" />
-              <img className={style.portrait} src="./image/fee_portrait.png" />
+              <img className={style.landscape} src="./image/fee.png" />
+              <img className={style.portrait} src="./image/fee-mobile.png" />
             </div>
             <div className={style.overlay}>
               <h1>呼叫律師如何收費？</h1>
@@ -81,32 +75,26 @@ class App extends React.Component {
           </section>
           <section>
             <h1>呼叫律師 3大保證</h1>
-            <div className={c(style.wrapper, style.quality)}>
+            <div className={style.quality}>
               <Card
                 label="專業合格律師"
-                image="./image/quality_professional.png"
-                column={true}
-                >
+                imageClass={style.professional}>
                 每位律師都是經過法務部認證、專業又合格的律師，確實把關守護您的權益
               </Card>
               <Card
                 label="豐富經驗"
-                image="./image/quality_experience.png"
-                column={true}
-                >
+                imageClass={style.experience}>
                 每位律師都有多年豐富的執業經驗，各個身經百戰，專屬於您的守護者
               </Card>
               <Card
                 label="迅速抵達"
-                image="./image/quality_fast.png"
-                column={true}
-                >
+                imageClass={style.fast}>
                 您的專屬律師30分鐘馬上抵達，即使在警察局您再也不必擔心受怕
               </Card>
             </div>
             <Enter>開始使用</Enter>
           </section>
-          <section className={style.even}>
+          <section>
             <div className={style.feedback}></div>
             <div className={style.overlay}>
               <h1>來聽聽使用者的故事</h1>

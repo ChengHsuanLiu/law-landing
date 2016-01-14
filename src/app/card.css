@@ -1,14 +1,24 @@
 .card {
-  width: 200px;
-  height: 450px;
-  text-align: center;
-}
-
-.image {
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30%;
+  margin-right: 10%;
+}
+
+.image > img {
+  width: 150px;
 }
 
 .label {
@@ -16,6 +26,7 @@
   line-height: 20px;
   color: #000000;
   font-weight: 500;
+  text-align: left;
 }
 
 .content {
@@ -25,20 +36,22 @@
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 641px) {
   .card {
-    width: 150px;
+    flex-direction: column;
+    max-width: 200px;
+    height: inherit;
+    padding: 0;
   }
 
-  .column {
-    height: 200px;
+  .image {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    height: 300px;
+    margin-right: 0;
+    margin-bottom: 59px;
   }
 
-  .column .image {
-    margin-right: 50px;
+  .image > img {
+    width: 100%;
   }
 }

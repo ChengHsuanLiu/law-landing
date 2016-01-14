@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f908c0fd178d020e7a41"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "892ebce9491e1d86398c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -782,15 +782,15 @@
 
 	var _card2 = _interopRequireDefault(_card);
 
-	var _comment = __webpack_require__(217);
+	var _comment = __webpack_require__(218);
 
 	var _comment2 = _interopRequireDefault(_comment);
 
-	var _link = __webpack_require__(219);
+	var _link = __webpack_require__(220);
 
 	var _link2 = _interopRequireDefault(_link);
 
-	var _app = __webpack_require__(221);
+	var _app = __webpack_require__(222);
 
 	var _app2 = _interopRequireDefault(_app);
 
@@ -843,11 +843,7 @@
 	          _react2.default.createElement(
 	            'section',
 	            null,
-	            _react2.default.createElement(
-	              'div',
-	              { className: _app2.default.cover },
-	              _react2.default.createElement('img', { src: './image/main.png' })
-	            ),
+	            _react2.default.createElement('div', { className: _app2.default.cover }),
 	            _react2.default.createElement(
 	              'div',
 	              { className: (0, _classnames2.default)(_app2.default.overlay, _app2.default.wrapper, _app2.default.main) },
@@ -887,42 +883,38 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.step) },
+	              { className: _app2.default.step },
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '1句話',
-	                  image: './image/step1.png'
-	                },
+	                  imageClass: _app2.default.step1 },
 	                '只要 1 句話:「我要請律師」所有的偵訊程序一切停止'
 	              ),
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '快速定位',
-	                  image: './image/step2.png'
-	                },
+	                  imageClass: _app2.default.step2 },
 	                '拿出智慧型手機 GPS 定位，選擇您所在的警察局，您的專屬律師馬上前往救援'
 	              ),
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '100 秒搜尋',
-	                  image: './image/step3.png'
-	                },
+	                  imageClass: _app2.default.step3 },
 	                '只要 100 秒即可搜尋您附近的律師，各地都有您的專屬律師守護著您'
 	              ),
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '30分鐘抵達',
-	                  image: './image/step4.png'
-	                },
+	                  imageClass: _app2.default.step4 },
 	                '您的專屬律師 30 分鐘馬上抵達，依照法律規定，您的律師抵達前偵訊停止進行'
 	              ),
 	              _react2.default.createElement(_card2.default, {
 	                label: '保持緘默 耐心等候',
-	                image: './image/step5.png' })
+	                imageClass: _app2.default.step5 })
 	            ),
 	            _react2.default.createElement(
 	              _enter2.default,
@@ -932,12 +924,12 @@
 	          ),
 	          _react2.default.createElement(
 	            'section',
-	            { className: _app2.default.even, id: 'fee' },
+	            { id: 'fee' },
 	            _react2.default.createElement(
 	              'div',
 	              { className: _app2.default.fee },
-	              _react2.default.createElement('img', { className: _app2.default.landscape, src: './image/fee_landscape.png' }),
-	              _react2.default.createElement('img', { className: _app2.default.portrait, src: './image/fee_portrait.png' })
+	              _react2.default.createElement('img', { className: _app2.default.landscape, src: './image/fee.png' }),
+	              _react2.default.createElement('img', { className: _app2.default.portrait, src: './image/fee-mobile.png' })
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -964,32 +956,26 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: (0, _classnames2.default)(_app2.default.wrapper, _app2.default.quality) },
+	              { className: _app2.default.quality },
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '專業合格律師',
-	                  image: './image/quality_professional.png',
-	                  column: true
-	                },
+	                  imageClass: _app2.default.professional },
 	                '每位律師都是經過法務部認證、專業又合格的律師，確實把關守護您的權益'
 	              ),
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '豐富經驗',
-	                  image: './image/quality_experience.png',
-	                  column: true
-	                },
+	                  imageClass: _app2.default.experience },
 	                '每位律師都有多年豐富的執業經驗，各個身經百戰，專屬於您的守護者'
 	              ),
 	              _react2.default.createElement(
 	                _card2.default,
 	                {
 	                  label: '迅速抵達',
-	                  image: './image/quality_fast.png',
-	                  column: true
-	                },
+	                  imageClass: _app2.default.fast },
 	                '您的專屬律師30分鐘馬上抵達，即使在警察局您再也不必擔心受怕'
 	              )
 	            ),
@@ -1001,7 +987,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'section',
-	            { className: _app2.default.even },
+	            null,
 	            _react2.default.createElement('div', { className: _app2.default.feedback }),
 	            _react2.default.createElement(
 	              'div',
@@ -21680,16 +21666,20 @@
 
 	var _card2 = _interopRequireDefault(_card);
 
+	var _transparent = __webpack_require__(217);
+
+	var _transparent2 = _interopRequireDefault(_transparent);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = function (props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: (0, _classnames2.default)(_card2.default.card, props.column && _card2.default.column) },
+	    { className: (0, _classnames2.default)(_card2.default.card) },
 	    _react2.default.createElement(
 	      'div',
-	      { className: _card2.default.image },
-	      _react2.default.createElement('img', { src: props.image })
+	      { className: (0, _classnames2.default)(_card2.default.image, props.imageClass) },
+	      _react2.default.createElement('img', { src: _transparent2.default })
 	    ),
 	    _react2.default.createElement(
 	      'div',
@@ -21713,10 +21703,16 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"card":"card__card","image":"card__image","label":"card__label","content":"card__content","column":"card__column"};
+	module.exports = {"card":"card__card","image":"card__image","label":"card__label","content":"card__content"};
 
 /***/ },
 /* 217 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAChJREFUWAnt0IEAAAAAw6D5Ux/khVBhwIABAwYMGDBgwIABAwYMvA8MECAAAc4qtccAAAAASUVORK5CYII="
+
+/***/ },
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21737,7 +21733,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _comment = __webpack_require__(218);
+	var _comment = __webpack_require__(219);
 
 	var _comment2 = _interopRequireDefault(_comment);
 
@@ -21762,14 +21758,14 @@
 	};
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"comment":"comment__comment","author":"comment__author"};
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21790,7 +21786,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _link = __webpack_require__(220);
+	var _link = __webpack_require__(221);
 
 	var _link2 = _interopRequireDefault(_link);
 
@@ -21805,18 +21801,18 @@
 	};
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"link":"link__link"};
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"title":"app__title","even":"app__even","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","cover":"app__cover","main":"app__main","step":"app__step","note":"app__note","fee":"app__fee","portrait":"app__portrait","landscape":"app__landscape","quality":"app__quality","feedback":"app__feedback","comment":"app__comment","link":"app__link","app":"app__app","copyright":"app__copyright"};
+	module.exports = {"title":"app__title","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","cover":"app__cover","main":"app__main","step":"app__step app__wrapper","step2":"app__step2","step3":"app__step3","step4":"app__step4","step1":"app__step1","step5":"app__step5","note":"app__note","fee":"app__fee","portrait":"app__portrait","landscape":"app__landscape","professional":"app__professional","experience":"app__experience","fast":"app__fast","quality":"app__quality app__wrapper","feedback":"app__feedback","comment":"app__comment","link":"app__link","app":"app__app","copyright":"app__copyright"};
 
 /***/ }
 /******/ ]);

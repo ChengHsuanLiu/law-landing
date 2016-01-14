@@ -10,7 +10,7 @@ h1, h2, h3 {
   padding: 0;
 }
 
-.title {
+h1.title.title {
   font-size: 45px;
   font-weight: normal;
   color: #FFFFFF;
@@ -21,8 +21,8 @@ h1, h2, h3 {
 h1 {
   font-size: 30px;
   font-weight: 500;
-  padding-top: 71px;
-  padding-bottom: 64px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #515151;
 }
 
@@ -44,16 +44,20 @@ section {
   position: relative;
 }
 
-
-.even {
+section:nth-child(2n+1) {
   color: #FFFFFF;
 }
 
-.even h1 {
+section:nth-child(2n+1) h1 {
   font-size: 25px;
   padding-top: 38px;
   padding-bottom: 20px;
   color: #FFFFFF;
+}
+
+section:nth-child(2n+2) {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -62,8 +66,7 @@ section {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 36px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .wrapper {
@@ -118,49 +121,92 @@ section {
 
 /* cover */
 .cover {
-  position: relative;
+  height: 460px;
+  background: url('../www/image/main-mobile.png');
+  background-size: cover;
 }
 
-.cover > img {
-  width: 100%;
-}
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) and (min-height: 851px) {
   .cover {
     height: 850px;
-    overflow: hidden;
-    position: relative;
   }
+}
 
-  .cover > img {
-    height: 100%;
-    width: inherit;
-    position: absolute;
-    left: 50%;
-    margin-left: -1300px;
+@media screen and (max-width: 640px) and (min-height: 921px) {
+  .cover {
+    height: 920px;
   }
+}
 
+@media screen and (min-width: 641px) {
+  .cover {
+    height: 550px;
+    background: url('../www/image/main.png');
+  }
+}
+
+.main {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 641px) {
   .main {
-    align-items: flex-end;
-    color: #FFFFFF;
+    color: #000000;
   }
 }
 
 /* step */
 .step {
-  justify-content: space-between;
+  composes: wrapper;
+  align-items: flex-start;
+  flex-direction: column;
   max-width: 1145px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 640px) {
+.step2 {
+  background-image: url('../www/image/step2-mobile.png');
+}
+.step3 {
+  background-image: url('../www/image/step3-mobile.png');
+}
+.step4 {
+  background-image: url('../www/image/step4-mobile.png');
+}
+
+.step > *:first-child,
+.step > *:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 641px) {
+  .step1 {
+    background-image: url('../www/image/step1.png');
+  }
+  .step2 {
+    background-image: url('../www/image/step2.png');
+  }
+  .step3 {
+    background-image: url('../www/image/step3.png');
+  }
+  .step4 {
+    background-image: url('../www/image/step4.png');
+  }
+  .step5 {
+    background-image: url('../www/image/step5.png');
+  }
+
   .step {
-    width: 540px;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .step > *:first-child,
   .step > *:last-child {
-    display: none;
+    display: block;
   }
 }
 
@@ -188,7 +234,20 @@ section {
 }
 
 /* quality */
+.professional {
+  background-image: url('../www/image/quality-professional.png');
+}
+
+.experience {
+  background-image: url('../www/image/quality-experience.png');
+}
+
+.fast {
+  background-image: url('../www/image/quality-fast.png');
+}
+
 .quality {
+  composes: wrapper;
   justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;

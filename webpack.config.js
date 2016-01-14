@@ -62,7 +62,7 @@ var config = {
       },
       { 
         test: /\.(svg|png|jpg)$/,
-        loader: "url-loader?limit=10000&mimetype=image/svg+xml"
+        loader: "url-loader?limit=5000&mimetype=image/png"
       }
     ]
   },
