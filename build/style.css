@@ -367,21 +367,29 @@ section:nth-child(2n+2) {
   color: #000000;
 }
 
+.app__fee {
+  background: url(48c75031998ddee3a30ad6f97c5ae2c7.png);
+  background-size: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
 .app__fee > img {
   width: 100%;
 }
 
-.app__portrait {
+.app__feeDisktop {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
-  .app__landscape {
-    display: none;
+@media screen and (min-width: 641px) {
+  .app__feeDisktop {
+    display: block;
   }
 
-  .app__portrait {
-    display: block;
+  .app__feeMobile {
+    display: none;
   }
 }
 

@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7367d3d10d0c734d73e8"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "06993372b9552dd51530"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -928,12 +928,6 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: _app2.default.fee },
-	              _react2.default.createElement('img', { className: _app2.default.landscape, src: './image/fee.png' }),
-	              _react2.default.createElement('img', { className: _app2.default.portrait, src: './image/fee-mobile.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: _app2.default.overlay },
 	              _react2.default.createElement(
 	                'h1',
 	                null,
@@ -943,7 +937,9 @@
 	                'div',
 	                { className: _app2.default.note },
 	                '呼叫律師按小時收費，最低收費為2小時'
-	              )
+	              ),
+	              _react2.default.createElement('img', { className: _app2.default.feeDisktop, src: './image/fee.png' }),
+	              _react2.default.createElement('img', { className: _app2.default.feeMobile, src: './image/fee-mobile.png' })
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -21811,7 +21807,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"title":"app__title","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","cover":"app__cover","main":"app__main","step":"app__step app__wrapper","step2":"app__step2","step3":"app__step3","step4":"app__step4","step1":"app__step1","step5":"app__step5","note":"app__note","fee":"app__fee","portrait":"app__portrait","landscape":"app__landscape","professional":"app__professional","experience":"app__experience","fast":"app__fast","quality":"app__quality app__wrapper","feedback":"app__feedback","comment":"app__comment","link":"app__link","app":"app__app","copyright":"app__copyright"};
+	module.exports = {"title":"app__title","container":"app__container","wrapper":"app__wrapper","overlay":"app__overlay","navbar":"app__navbar","nav":"app__nav","cover":"app__cover","main":"app__main","step":"app__step app__wrapper","step2":"app__step2","step3":"app__step3","step4":"app__step4","step1":"app__step1","step5":"app__step5","note":"app__note","fee":"app__fee","feeDisktop":"app__feeDisktop","feeMobile":"app__feeMobile","professional":"app__professional","experience":"app__experience","fast":"app__fast","quality":"app__quality app__wrapper","feedback":"app__feedback","comment":"app__comment","link":"app__link","app":"app__app","copyright":"app__copyright"};
 
 /***/ }
 /******/ ]);

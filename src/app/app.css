@@ -216,21 +216,29 @@ section:nth-child(2n+2) {
   color: #000000;
 }
 
+.fee {
+  background: url('../www/image/fee-background.png');
+  background-size: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
 .fee > img {
   width: 100%;
 }
 
-.portrait {
+.feeDisktop {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
-  .landscape {
-    display: none;
+@media screen and (min-width: 641px) {
+  .feeDisktop {
+    display: block;
   }
 
-  .portrait {
-    display: block;
+  .feeMobile {
+    display: none;
   }
 }
 

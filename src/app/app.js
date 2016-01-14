@@ -65,12 +65,10 @@ class App extends React.Component {
           </section>
           <section id="fee">
             <div className={style.fee}>
-              <img className={style.landscape} src="./image/fee.png" />
-              <img className={style.portrait} src="./image/fee-mobile.png" />
-            </div>
-            <div className={style.overlay}>
               <h1>呼叫律師如何收費？</h1>
               <div className={style.note}>呼叫律師按小時收費，最低收費為2小時</div>
+              <img className={style.feeDisktop} src="./image/fee.png" />
+              <img className={style.feeMobile} src="./image/fee-mobile.png" />
             </div>
           </section>
           <section>
