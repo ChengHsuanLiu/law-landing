@@ -250,10 +250,14 @@ section:nth-child(2n+2) {
 .quality {
   composes: wrapper;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 641px) {
   .quality {
+    flex-direction: row;
     justify-content: space-between;
     max-width: 800px;
     margin: 0 auto;
@@ -262,7 +266,8 @@ section:nth-child(2n+2) {
 
 /* feedback */
 .feedback {
-  height: 570px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image: url('../www/image/feedback.png');
   background-size: cover;
 }

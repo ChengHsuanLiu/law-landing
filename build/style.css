@@ -404,10 +404,18 @@ section:nth-child(2n+2) {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 641px) {
   .app__quality {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -419,7 +427,8 @@ section:nth-child(2n+2) {
 
 /* feedback */
 .app__feedback {
-  height: 570px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image: url(5ae62cb0629850d10af8d9c650ff4d96.png);
   background-size: cover;
 }

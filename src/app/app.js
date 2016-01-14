@@ -95,8 +95,7 @@ class App extends React.Component {
             <Enter>開始使用</Enter>
           </section>
           <section>
-            <div className={style.feedback}></div>
-            <div className={style.overlay}>
+            <div className={style.feedback}>
               <h1>來聽聽使用者的故事</h1>
               <div className={c(style.wrapper, style.comment)}>
                 <Comment

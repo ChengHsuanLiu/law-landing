@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "519383bdb04ecd21d9e3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7367d3d10d0c734d73e8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -988,10 +988,9 @@
 	          _react2.default.createElement(
 	            'section',
 	            null,
-	            _react2.default.createElement('div', { className: _app2.default.feedback }),
 	            _react2.default.createElement(
 	              'div',
-	              { className: _app2.default.overlay },
+	              { className: _app2.default.feedback },
 	              _react2.default.createElement(
 	                'h1',
 	                null,
