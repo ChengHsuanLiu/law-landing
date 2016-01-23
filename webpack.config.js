@@ -1,17 +1,17 @@
-var webpack = require('webpack');
-var path = require('path');
-var TransferWebpackPlugin = require('transfer-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const TransferWebpackPlugin = require('transfer-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var config = {
+const config = {
   entry: [
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
-    path.join(__dirname, '/src/app/app.js')
+    path.join(__dirname, '/src/app/app.js'),
   ],
 
   resolve: {
-    extensions: ["", ".js", ".jsx", ".css"]
+    extensions: ["", ".js", ".jsx", ".css"],
   },
 
   devServer:{
@@ -19,22 +19,22 @@ var config = {
     devtool: 'eval',
     hot: true,
     inline: true,
-    port: 3000
+    port: 3000,
   },
 
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'app.js'
+    filename: 'app.js',
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new TransferWebpackPlugin([
-      {from: 'www'}
+      {from: 'www'},
     ], path.resolve(__dirname, "src")),
     new ExtractTextPlugin('style.css', {
-      allChunks: true
-    })
+      allChunks: true,
+    }),
   ],
   module: {
     preLoaders: [
@@ -42,7 +42,7 @@ var config = {
         test: /\.(js|jsx)$/,
         loader: 'eslint-loader',
         include: [path.resolve(__dirname, "src/app")],
-        exclude: [path.resolve(__dirname, 'node_modules')]
+        exclude: [path.resolve(__dirname, 'node_modules')],
       },
     ],
     loaders: [
@@ -53,25 +53,28 @@ var config = {
         query: {
           plugins: ['transform-runtime'],
           presets: ['es2015', 'stage-0', 'react'],
-        }
+        },
       },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader',
-        'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]!postcss-loader')
+        'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]!postcss-loader'),
       },
       { 
-        test: /\.(svg|png|jpg)$/,
-        loader: "url-loader?limit=5000&mimetype=image/png"
-      }
-    ]
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}',
+        ],
+      },
+    ],
   },
   postcss: [
     require('autoprefixer'),
-    require('postcss-color-rebeccapurple')
+    require('postcss-color-rebeccapurple'),
   ],
   eslint: {
-    configFile: '.eslintrc'
+    configFile: '.eslintrc',
   },
 };
 

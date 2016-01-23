@@ -123,7 +123,7 @@ section:nth-child(2n+2) {
 /* cover */
 .cover {
   height: 460px;
-  background: url('../www/image/main-mobile.png');
+  background: url('../www/image/main-mobile.jpg');
   background-size: cover;
 }
 
@@ -142,7 +142,7 @@ section:nth-child(2n+2) {
 @media screen and (min-width: 641px) {
   .cover {
     height: 550px;
-    background: url('../www/image/main.png');
+    background: url('../www/image/main.jpg');
   }
 }
 
@@ -217,7 +217,7 @@ section:nth-child(2n+2) {
 }
 
 .fee {
-  background: url('../www/image/fee-background.png');
+  background: url('../www/image/fee-background.jpg');
   background-size: cover;
   padding-left: 20px;
   padding-right: 20px;
@@ -276,7 +276,7 @@ section:nth-child(2n+2) {
 .feedback {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url('../www/image/feedback.png');
+  background-image: url('../www/image/feedback.jpg');
   background-size: cover;
 }
 
