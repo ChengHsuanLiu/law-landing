@@ -1,0 +1,145 @@
+select:required:invalid {
+  color: #FFF;
+}
+option[value="-1"][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+
+.formBar{
+	display: flex;
+	margin-top: 32px;
+}
+
+@media screen and (max-width: 600px){
+
+  .formBar{
+    display: block;
+  }
+
+  .formBarSection input{
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  .formBarSection{
+    padding: 4px 0;
+  }
+
+  .formBarSubmit{
+    padding: 8px 0 !important;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+
+.formBarSection input{
+	height: 2.8rem;
+	position: relative;
+	font-size: 16px;
+	box-sizing: border-box;
+	border: 0;
+  padding: 0 8px;
+}
+
+.formBarSection input:focus{
+	outline: none;
+}
+
+.formBar button{
+	background: #00A9CE;
+	border: 0;
+	color: #FFF;
+	padding: 0 32px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.formBar button:focus{
+	outline: none;
+}
+
+.formBar button:hover{
+	background: #3EC7E5;
+}
+/* area */
+
+.areaSelect{
+  height: 36px;
+  position: relative;
+  font-size: 16px;
+  display: block;
+	background-color: #FFFFFF;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 0;
+  /*height: 3rem;*/
+  text-transform: none;
+  outline: none;
+  height: 2.8rem;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+
+}
+
+.areaSelectBox{
+	position: relative;
+}
+
+/* policeStationInput */
+
+.policeStationSelect{
+  height: 36px;
+  position: relative;
+  font-size: 16px;
+  display: block;
+	background-color: #FFFFFF;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 0;
+  /*height: 3rem;*/
+  text-transform: none;
+  outline: none;
+  height: 2.8rem;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+
+}
+
+.policeStationSelectBox{
+	position: relative;
+}
+
+/* typeInput */
+
+.typeSelect{
+  height: 36px;
+  position: relative;
+  font-size: 16px;
+  display: block;
+	background-color: #FFFFFF;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 0;
+  /*height: 3rem;*/
+  text-transform: none;
+  outline: none;
+  height: 2.8rem;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+
+}
+
+.typeSelectBox{
+	position: relative;
+}
+

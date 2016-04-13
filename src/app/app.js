@@ -6,10 +6,14 @@ import Enter from './enter'
 import Card from './card'
 import Comment from './comment'
 import Link from './link'
+import FormBar from './formBar'
 
 import style from './app.css';
 
 class App extends React.Component {
+  state = {
+    openForm: true,
+  }
   render() {
     return (
       <div>
@@ -22,7 +26,7 @@ class App extends React.Component {
             </div>
           </div>
         </nav>
-        <article className={style.container}>
+        <article className={style.containerFuild}>
           <section>
             <div className={style.cover} />
             <div className={c(style.overlay, style.wrapper, style.main)}>
@@ -30,7 +34,7 @@ class App extends React.Component {
                 <h1 className={style.title}>呼叫律師</h1>
                 <h2>24 小時警局陪同作筆錄</h2>
                 <h3>迅速、專業的警局救援就在您身邊</h3>
-                <Enter>開始使用</Enter>
+                <FormBar />
               </div>
             </div>
           </section>
@@ -110,6 +114,19 @@ class App extends React.Component {
             </div>
           </section>
           <footer>
+            <div className={style.wrapper}>
+              <div className={style.contact}>
+                <div className={style.contactText}>
+                  <p>緊急聯絡電話</p>
+                  <p>0958-328-001</p>
+                </div>
+                <div className={style.contactText}>
+                  <p>緊急聯絡Email</p>
+                  <p>law580580@gmail.com</p>
+                </div>
+                <div className={style.clearBoth}></div>
+              </div>
+            </div>
             <div className={c(style.wrapper, style.link)}>
               <Link href="#">呼叫律師</Link>
               <Link>合作提案</Link>

@@ -1,9 +1,14 @@
+*{
+  color: #333333;
+}
+
 html, body {
   font-family: "Noto Sans", "Noto Sans CJK TC", sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  color: #333333;
 }
 
 h1, h2, h3 {
@@ -61,6 +66,10 @@ section:nth-child(2n+2) {
   padding-bottom: 30px;
 }
 
+.containerFuild{
+  width: 100%;
+}
+
 .container {
   background: #FFFFFF;
   box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.41);
@@ -97,7 +106,6 @@ section:nth-child(2n+2) {
   margin: 0 auto;
   justify-content: space-between;
   background: #FFFFFF;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 }
 
 .nav > *:first-child {
@@ -125,6 +133,8 @@ section:nth-child(2n+2) {
   height: 460px;
   background: url('../www/image/main-mobile.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (max-width: 640px) and (min-height: 851px) {
@@ -143,6 +153,9 @@ section:nth-child(2n+2) {
   .cover {
     height: 550px;
     background: url('../www/image/main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -305,4 +318,22 @@ section:nth-child(2n+2) {
 .copyright {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+/* Footer Contact */
+
+.contact{
+  width: 100%;
+  max-width: 800px;
+  padding: 24px 0;
+}
+
+.contactText{
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+}
+
+.clearBoth{
+  clear: both;
 }
