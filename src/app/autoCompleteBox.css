@@ -1,0 +1,34 @@
+.autocompleteList{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	max-height: 150px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align: left;
+	background: #FFF;
+	z-index: 100;
+}
+
+.AutoCompleteBox{
+	position: relative;
+}
+
+.autocompleteListRow{
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.autocompleteListRow:hover{
+	background: #B2D6DE;
+	color: #FFF !important;
+}
+
+.formSearchBox{
+	padding: 0 8px;
+}
+
+.hide{
+	display: none;
+}
